@@ -12,7 +12,7 @@
 
         <h2>Recent Posts</h2>
         <ul>
-            {% for page in section.pages if not page.draft %}
+            {% for page in section.pages | filter(attribute="draft", value=false) %}
             <li>
                 <article>
                     <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
