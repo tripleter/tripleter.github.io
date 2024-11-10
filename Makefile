@@ -1,9 +1,12 @@
-.PHONY: build serve clean
+.PHONY: build serve clean check-zola
 
-build:
+check-zola:
+	@which zola > /dev/null || (echo "Error: Zola is not installed. Please install it first using 'cargo install zola'" && exit 1)
+
+build: check-zola
 	zola build
 
-serve:
+serve: check-zola
 	zola serve
 
 clean:
