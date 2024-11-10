@@ -1,6 +1,6 @@
 +++
 title = "Coming Soon: Interactive Triplet Graph Visualizer"
-date = 2024-01-23
+date = 2024-10-23
 draft = true
 +++
 

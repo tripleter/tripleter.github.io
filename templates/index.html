@@ -9,6 +9,17 @@
 <body>
     <main>
         {{ section.content | safe }}
+        
+        <ul>
+            {% for page in get_section(path="blog/_index.md").pages %}
+            <li>
+                <article>
+                    <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+                    <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
     </main>
 </body>
 </html>
