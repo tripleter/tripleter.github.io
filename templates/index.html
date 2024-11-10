@@ -5,13 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config.title }}</title>
     <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <main>
         {{ section.content | safe }}
 
         <p>Explore our <a href="https://tripleter.github.io/vis/v5">Graph Triplet Visualizer</a> to interact with graph data.</p>
+
         <p>Use <a href="https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter">Semantic Tripleter GPT</a> to generate sets of triplets for your projects!</p>
+
+    <table>
+        <tr>
+            <td>
+                <p>Explore our <a href="https://tripleter.github.io/vis/v5">Graph Triplet Visualizer</a> to interact with graph data.</p>
+            </td>
+            <td>
+                <p>Use <a href="https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter">Semantic Tripleter GPT</a> to generate sets of triplets for your projects!</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://tripleter.github.io/vis/v5">
+                <img src="img/vis_v5_ex00.png" alt="Graph Triplets Visualizer.">
+                </a>
+            </td>
+            <td>
+                <a href="https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter">
+                <img src="img/semantic_tripleter_gpt.png" alt="Semantic Tripleter GPT">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+
         <ul>
             {% set blog_section = get_section(path="blog/_index.md") %}
             {% for page in blog_section.pages | filter(attribute="draft", value=false) %}
