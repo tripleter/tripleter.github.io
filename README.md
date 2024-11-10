@@ -2,12 +2,7 @@
 
 Work in progress static site built with [Zola](https://www.getzola.org/).
 
-## Prerequisites
+## Please try - Graph visualizer and builder, and Triplet gemerator GPT
 
-- [Zola](https://www.getzola.org/documentation/getting-started/installation/) for local development
-- Docker (optional)
-
-## Development
-
-### Using Zola directly
-
+* Visualie triplet: https://gwwtests.github.io/24/visjs-vis-network-subject-object-predicate/graph-relationships-ver-5-mod.html
+* Generate triplets with Semantic Tripleter GPT: https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter
