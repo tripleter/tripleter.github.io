@@ -11,7 +11,8 @@
         {{ section.content | safe }}
         
         <ul>
-            {% for page in get_section(path="blog/_index.md").pages %}
+            {% set blog = get_section(path="blog/_index.md") %}
+            {% for page in blog.pages %}
             <li>
                 <article>
                     <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
