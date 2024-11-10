@@ -26,11 +26,11 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install Zola
-        uses: taiki-e/install-action@v2
-        with:
-          tool: zola@0.17.2
+        run: |
+          curl -sSf https://get.zola.rs | bash
+          export PATH="$HOME/.local/bin:$PATH"
 
-      - name: Build Zola site
+      - name: Build site
         run: zola build
 
       - name: Upload artifact
