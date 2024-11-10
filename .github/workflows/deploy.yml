@@ -12,11 +12,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
-      - name: Build and deploy
-        uses: shalzz/zola-deploy-action@v0.17.2
+      - name: Install Zola
+        run: |
+          curl -sSf https://get.zola.rs | sh -s -- -y
+          export PATH="$HOME/.local/bin:$PATH"
+
+      - name: Build
+        run: zola build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          build_dir: public
-          deploy_branch: gh-pages
-          clean: true
-          keep_files: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
