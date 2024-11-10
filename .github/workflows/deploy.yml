@@ -18,3 +18,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           build_dir: public
           deploy_branch: gh-pages
+          clean: true
