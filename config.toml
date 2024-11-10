@@ -1,6 +1,6 @@
-base_url = "https://yourusername.github.io/tripletter"
+base_url = "https://tripleter.github.io"
 title = "Tripletter"
-description = "Work in Progress"
+description = "Exploring Graph Algorithms, Knowledge Graphs, and AI Applications"
 compile_sass = true
 build_search_index = true
 generate_feed = true
