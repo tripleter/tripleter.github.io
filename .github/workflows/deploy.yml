@@ -19,3 +19,4 @@ jobs:
           build_dir: public
           deploy_branch: gh-pages
           clean: true
+          keep_files: true
