@@ -1,0 +1,9 @@
+base_url = "https://yourusername.github.io/tripletter"
+title = "Tripletter"
+description = "Work in Progress"
+compile_sass = true
+build_search_index = true
+generate_feed = true
+
+[markdown]
+highlight_code = true
