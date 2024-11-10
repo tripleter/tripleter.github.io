@@ -3,7 +3,7 @@ title = "Tripletter"
 template = "index.html"
 +++
 
-# Welcome to Tripletter
+# Welcome to Tripleter
 
 Exploring the intersection of Graph Algorithms, Knowledge Graphs, and Artificial Intelligence.
 
