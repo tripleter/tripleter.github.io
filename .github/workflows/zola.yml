@@ -26,9 +26,9 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install Zola
-        run: |
-          curl -sSf https://get.zola.rs | bash
-          export PATH="$HOME/.local/bin:$PATH"
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.1
 
       - name: Build site
         run: |
