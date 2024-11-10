@@ -6,8 +6,5 @@ draft = false
 
 # Interactive Triplet Graph Visualizer Preview
 
-We're working on an exciting new tool that will help you visualize and interact with graph data using vis.js vis-network. This powerful visualization library will allow us to create dynamic, interactive graph representations that you can manipulate in real-time.
-
-Stay tuned for the full implementation coming October 2024!
-
-[More details to come...]
+* [Interactive Graph Visualiser and Builder](https://gwwtests.github.io/24/visjs-vis-network-subject-object-predicate/graph-relationships-ver-5-mod.html)
+* [Semantic Tripleter GPT](https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter)
