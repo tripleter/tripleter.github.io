@@ -31,7 +31,9 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
 
       - name: Build site
-        run: zola build
+        run: |
+          zola build
+          ls -R public  # List the contents of the public directory to verify static files
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
