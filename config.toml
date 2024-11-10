@@ -3,7 +3,7 @@ title = "Tripletter"
 description = "Exploring Graph Algorithms, Knowledge Graphs, and AI Applications"
 compile_sass = true
 build_search_index = true
-generate_feed = true
+generate_feeds = true
 
 [markdown]
 highlight_code = true
