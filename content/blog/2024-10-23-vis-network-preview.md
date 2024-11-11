@@ -28,6 +28,15 @@ draft = false
 
 <table>
     <tr>
+        <td colspan="2">
+            <a href="https://tripleter.github.io/vis/v5">Graph Tripler Visualiser</a> and <a href="https://chatgpt.com/g/g-6730f18c987c8190baeeb872c2504306-semantic-tripleter">Semantic Tripleter GPT</a>
+            <video width="80%" controls>
+                <source src="/vid/vis_v5_demo00.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+    </tr>
+    <tr>
         <td>
             <p>Explore our <a href="https://tripleter.github.io/vis/v5">Graph Triplet Visualizer</a> to interact with graph data.</p>
         </td>
